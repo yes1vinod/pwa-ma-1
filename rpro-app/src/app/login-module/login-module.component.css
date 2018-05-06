@@ -4,8 +4,8 @@
 }
 
 .dashboard-card {
-  background-color:#5e0eff;
   position: absolute;
+  align-items: center;
   top: 15px;
   left: 15px;
   right: 15px;
@@ -30,4 +30,13 @@
 .heading{
   background-color: darkblue;
   color:white;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
 }

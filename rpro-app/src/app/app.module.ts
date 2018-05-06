@@ -10,8 +10,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //Routing imports
 import { AppRoutingModule } from './app-routing.module';
 import { LoginModuleComponent } from './login-module/login-module.component';
-import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material'
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule,
+   MatSelectModule, MatOptionModule,MatInputModule } from '@angular/material'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatIconModule,
     MatButtonModule,
     AppRoutingModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
