@@ -1,47 +1,78 @@
 <div class="grid-container">
   <h1 class="mat-h1">Recruitment Pro</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile *ngFor="let card of cards" [colspan]="card.cols" [rowspan]="card.rows">
+  <mat-grid-list cols="2" rowHeight="500px">
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+
+
+
       <mat-card class="dashboard-card">
-        <mat-card-header>
-          <mat-card-title>
-            {{card.title}}
-            <mat-icon>lock</mat-icon>
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+        <mat-tab-group class="demo-tab-group">
+          <mat-tab label="Login Form">
+            <mat-card-header>
+              <mat-card-title>
+                <div class="inline-display">
+                  <!-- <h2 class="inline-display mat-h2">New User SignUp Form</h2>-->
+                  <!--  <mat-icon>lock</mat-icon> -->
+                  <!-- <button mat-raised-button class="inline-display inline-display-right" 
+                  color="primary">User Login</button>-->
+                  <!--  <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
               <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
               <button mat-menu-item>Expand</button>
               <button mat-menu-item>Remove</button>
-            </mat-menu>
-          </mat-card-title>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <div class="example-container">
-            <mat-form-field>
-              <input matInput placeholder="Email ID">
-              <mat-hint align="end">e.g: userID@domain.com</mat-hint>
-            </mat-form-field>
+            </mat-menu>-->
+                </div>
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">
+              <div class="example-container">
+                <mat-form-field>
+                  <input matInput placeholder="Email ID">
+                  <mat-hint align="end">e.g: userID@domain.com</mat-hint>
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput type="password" placeholder="Password">
+                </mat-form-field>
+              </div>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-raised-button color="primary">Login</button>
+            </mat-card-actions>
+          </mat-tab>
+          <mat-tab label="SignUp Form">
+            <mat-card-content class="dashboard-card-content">
+              <div class="example-container">
+                <mat-form-field>
+                  <input matInput placeholder="FirstName LastName">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput placeholder="Phone Number">
 
-            <mat-form-field>
-              <textarea matInput placeholder="Textarea"></textarea>
-            </mat-form-field>
-
-            <mat-form-field>
-              <mat-select placeholder="Select">
-                <mat-option value="option">Option1</mat-option>
-                <mat-option value="option">Option2</mat-option>
-                <mat-option value="option">Option3</mat-option>
-                <mat-option value="option">Option4</mat-option>
-                <mat-option value="option">Option5</mat-option>
-              </mat-select>
-            </mat-form-field>
-          </div>
-
-          <button mat-raised-button>Sign Up</button>
-        </mat-card-content>
-       
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput placeholder="EmailID">
+                  <mat-hint align="end">e.g: userID@domain.com</mat-hint>
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput type="password" placeholder="Password">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput type="password" placeholder="Confirm Password">
+                </mat-form-field>
+              </div>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-raised-button color="primary">Sign Up</button>
+            </mat-card-actions>
+          </mat-tab>
+        </mat-tab-group>
       </mat-card>
+
     </mat-grid-tile>
+
+
+
+
   </mat-grid-list>
 </div>

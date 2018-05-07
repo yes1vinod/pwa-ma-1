@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginModuleComponent } from './login-module/login-module.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule,
-   MatSelectModule, MatOptionModule,MatInputModule } from '@angular/material'
+   MatSelectModule, MatOptionModule,MatInputModule,MatTabsModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,8 @@ import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButt
     MatFormFieldModule,
     MatSelectModule,
     MatOptionModule,
-    MatInputModule
+    MatInputModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

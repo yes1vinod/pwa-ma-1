@@ -18,9 +18,7 @@
   right: 10px;
 }
 
-.dashboard-card-content {
-  text-align: center;
-}
+
 
 .loginButton{
   background-color:#ffaf0e;
@@ -39,4 +37,30 @@
 
 .example-container > * {
   width: 100%;
+}
+
+.alignCenter{
+  align-items: center;
+  align-content: center;
+}
+.cardHeader{
+  background: cornsilk;
+}
+.inline-display{
+  width:100%
+/*  display:inline-block;*/
+}
+.inline-display-right{
+  align-content: right;
+  float:right;
+}
+
+.mat-card-actions {
+   margin-left: 1px;
+   align-content: center;
+  /* margin-right: -16px; */
+  /* padding: 8px 0; */
+}
+.center-align{
+  align-content: center;
 }
