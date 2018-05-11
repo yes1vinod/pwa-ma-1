@@ -2,10 +2,13 @@
     background-image: url("../assets/img/avatar-3127928_1280.jpg");
     background-size: cover;
    
-        height:700px;
+        height:600px;
         margin: 0;
         padding: 0;
         border: 0;
     
+ }
+ .footer{
+     background-color: grey;
  }
 

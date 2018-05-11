@@ -3,8 +3,6 @@
   <mat-grid-list cols="2" rowHeight="500px">
     <mat-grid-tile [colspan]="1" [rowspan]="1">
 
-
-
       <mat-card class="dashboard-card">
         <mat-tab-group class="demo-tab-group">
           <mat-tab label="Login Form">
@@ -37,7 +35,7 @@
               </div>
             </mat-card-content>
             <mat-card-actions>
-              <button mat-raised-button color="primary">Login</button>
+              <button mat-raised-button (click)="fnLogin()" color="primary">Login</button>
             </mat-card-actions>
           </mat-tab>
           <mat-tab label="SignUp Form">

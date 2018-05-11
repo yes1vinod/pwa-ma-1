@@ -13,11 +13,13 @@ import { LoginModuleComponent } from './login-module/login-module.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule,
    MatSelectModule, MatOptionModule,MatInputModule,MatTabsModule } from '@angular/material';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginModuleComponent
+    LoginModuleComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
